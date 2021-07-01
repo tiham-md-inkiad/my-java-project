@@ -1,9 +1,9 @@
 package org.miancode.ss;
+import static org.miancode.ss.Services.addservice;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
-import static org.miancode.ss.Services.addservice;
 
 
 public class Main {
@@ -82,11 +82,49 @@ public class Main {
                 "\n\t1.Bike Accessories "+
                 "\n\t2.Cars Accessories"+
                 "\n\t3.Other Accessories"+
-                "\n\t4.Employee salary list"+
+                "\n\t4.Engine oils"+
                 "\n\t5.Quit");
+                scanner=new Scanner(System.in);
+                int choice=scanner.nextInt();
+        
+                switch (choice)
+                {
+                    case 1:
+                        BikeAccessories();
+                        break;
+                    case 2:
+                         CarAccessories();
+                        break;
+                    case 3:
+                         Other_Accessories();
+                        break;
+                    case 4:
+                         engine_oil();
+                        break;
+                    default:
+                        break;
+                }
+                showInitialOptions();
 
     }
 
+
+    
+
+   
+
+  
+    private static void engine_oil() {
+    }
+
+    private static void Other_Accessories() {
+    }
+
+    private static void CarAccessories() {
+    }
+
+    private static void BikeAccessories() {
+    }
 
     private static void Available_services() {
 
