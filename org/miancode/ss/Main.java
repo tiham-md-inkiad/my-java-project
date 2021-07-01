@@ -4,8 +4,6 @@ import static org.miancode.ss.Services.addservice;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
-
 public class Main {
     private static ArrayList<Customer>customers;
     private static ArrayList<Employee>employees;
